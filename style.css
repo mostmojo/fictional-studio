@@ -7,7 +7,9 @@
 }
 
 body, button {
-	font-family: 'Poppins', sans-serif;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	background: #1B1919;
 }
 
 header {
@@ -44,18 +46,20 @@ nav {
 	color: #5f5f79;
 	font-size: 18px;
 	text-decoration: none;
+	flex: 1;
 }
 
 .cart {
 	flex: 1;
 	justify-content: flex-end;
+	height: 1.2rem;
 }
 
 .presentation {
 	display: flex;
 	width: 90%;
-	margin: auto;
-	min-height: 80vh;
+	margin: 10vh auto;
+	min-height: 100vh;
 	align-items: center;
 }
 
@@ -65,17 +69,17 @@ nav {
 
 .intro-text h1 {
 	font-size: 44px;
-	font-weight: 0px;
+	font-weight: 300;;
 	/* Add linear gradient to background, then clip the text and make the fill transparent to get a nice bg gradient inside the font ( lines 68-70 are pure gold) */
-	background: linear-gradient(to right, #494964, #6f6f89);
+	background: linear-gradient(to right, #d1c7c7,#1B1919);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
 .intro-text p {
-	margin-top: 5px;
-	font-size: 22px;
-	color: #585772;
+	margin-top: 4px;
+	font-size: 16px;
+	color: #747373;
 }
 
 .cta {
