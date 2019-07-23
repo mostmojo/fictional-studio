@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 
-body, button {
+body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
 	background: #1B1919;
@@ -20,39 +20,10 @@ header {
 	align-items: center;
 }
 
-.logo-container, .nav-links, .cart {
-	display: flex;
-}
-
-.logo-text {
-	font-weight: 400;
-	margin: 5px;
-}
-
-.logo-container {
-	flex: 1;
-}
-
-nav {
-	flex: 2;
-}
-
-.nav-links {
-	justify-content: space-around;
-	list-style: none;
-}
-
-.nav-link {
-	color: #5f5f79;
-	font-size: 18px;
-	text-decoration: none;
-	flex: 1;
-}
-
-.cart {
-	flex: 1;
-	justify-content: flex-end;
-	height: 1.2rem;
+.hamburger-menu {
+	height: 16px;
+	width: 32px;
+	margin-left: 74rem;
 }
 
 .presentation {
@@ -74,6 +45,7 @@ nav {
 	background: linear-gradient(to right, #d1c7c7,#1B1919);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	animation: drop 1.5s ease;
 }
 
 .intro-text p {
@@ -82,8 +54,9 @@ nav {
 	color: #747373;
 }
 
-.cta {
-	padding: 50px 0px 0px 0px;
+.cta img {
+	height: 16px;
+	width: 16px;
 }
 
 .cta-select {
