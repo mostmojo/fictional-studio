@@ -21,6 +21,10 @@ header {
 	justify-content: flex-end;
 }
 
+a {
+	color: #747373;
+}
+
 .heading-elements {
 	display: flex;
 	justify-content: space-around;
