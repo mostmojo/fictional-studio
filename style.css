@@ -59,7 +59,7 @@ header {
 	background: linear-gradient(to right, #d1c7c7,#1B1919);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	animation: drop 1.5s ease;
+	animation: drop 2.125s ease;
 }
 
 .intro-text p {
