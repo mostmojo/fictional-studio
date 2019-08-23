@@ -10,7 +10,7 @@
 
 **Scenario 1**: more than one error persists, we may have to regenerate the `package.json` file, so delete it, and the `node_modules` too and then use `npm init` in the command line.
 
-**Scenario 2**: Sometimes it has to do with `sudo` and `npm` unable to communicate. Here's a set of commands I ran to fix it.
+**Scenario 2**: Sometimes it has to do with `sudo` and `npm` unable to communicate. Here's a set of commands I ran to fix it. Link [here](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally)).
 
 ```
 sudo npm install -g npm
