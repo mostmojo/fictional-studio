@@ -1,0 +1,245 @@
+/* ------------------------------  */
+/*
+
+Media Query Manager (Mixins)
+
+0 - 600px;       Phone
+600 - 900px;     Tablet Portrait
+900 - 1200px;    Tablet Landscape
+1200 - 1800px;   Desktop
+1800px + ;       Big Desktop
+
+`$breakpoint` Argument Choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography + general layout + grid > page layout > components
+
+1em = 16px;
+
+*/
+/* ----------------------------------------------- */
+.navigation .navigation__checkbox {
+  display: none; }
+
+.navigation .navigation__button {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  height: 7rem;
+  position: fixed;
+  right: 6rem;
+  text-align: center;
+  top: 6rem;
+  width: 7rem;
+  z-index: 2000; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation .navigation__button {
+      right: 4rem;
+      top: 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation .navigation__button {
+      right: 3rem;
+      top: 3rem; } }
+
+.navigation .navigation__background {
+  background-image: radial-gradient(#333, #000);
+  border-radius: 50%;
+  height: 6rem;
+  position: fixed;
+  right: 6.5rem;
+  top: 6.5rem;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  width: 6rem;
+  z-index: 1000; }
+  @media only screen and (max-width: 56.25em) {
+    .navigation .navigation__background {
+      right: 4.5rem;
+      top: 4.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .navigation .navigation__background {
+      right: 3rem;
+      top: 3rem; } }
+
+.navigation .navigation__nav {
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  width: 0;
+  z-index: 1500; }
+
+.navigation .navigation__list {
+  left: 50%;
+  list-style: none;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; }
+
+.navigation .navigation__item {
+  margin: 1rem; }
+
+.navigation .navigation__link:link, .navigation .navigation__link:visited {
+  background-image: linear-gradient(114deg, transparent 0%, transparent 50%, #fff 50%);
+  background-size: 225%;
+  color: #fff;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition: all 0.4s; }
+
+.navigation .navigation__link:hover, .navigation .navigation__link:active {
+  background-position: 100%;
+  color: #000;
+  transform: translateX(1rem); }
+
+.navigation .navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation .navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
+
+.navigation .navigation__icon {
+  position: relative;
+  margin-top: 3.5rem; }
+  .navigation .navigation__icon, .navigation .navigation__icon::before, .navigation .navigation__icon::after {
+    width: 3rem;
+    height: 1.3px;
+    background-color: darkgrey;
+    display: inline-block; }
+  .navigation .navigation__icon::before, .navigation .navigation__icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s; }
+  .navigation .navigation__icon::before {
+    top: -0.8rem; }
+  .navigation .navigation__icon::after {
+    top: 0.8rem; }
+
+.navigation .navigation__button:hover .navigation__icon::before {
+  top: -1rem; }
+
+.navigation .navigation__button:hover .navigation__icon::after {
+  top: 1rem; }
+
+.navigation .navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent; }
+
+.navigation .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg); }
+
+.navigation .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg); }
+
+/* Basic reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  background: #1B1919; }
+
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+  justify-content: flex-end; }
+
+a {
+  color: #747373; }
+
+.heading-elements {
+  display: flex;
+  justify-content: space-around; }
+
+.hamburger-menu {
+  height: 16px;
+  width: 32px;
+  flex: 1; }
+
+.about {
+  flex: 2;
+  margin-right: 2rem;
+  color: #a2a2a2;
+  opacity: 0.4; }
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: 10vh auto;
+  min-height: 100vh;
+  align-items: center;
+  position: relative; }
+
+.introduction {
+  flex: 1; }
+
+.intro-text h1 {
+  font-size: 44px;
+  font-weight: 300;
+  /* Add linear gradient to background, then clip the text and make the fill transparent to get a nice bg gradient inside the font ( lines 68-70 are pure gold) */
+  background: linear-gradient(to right, #d1c7c7, #1B1919);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: drop 2.125s ease; }
+
+.intro-text p {
+  margin-top: 4px;
+  font-size: 16px;
+  color: #747373; }
+
+.cta {
+  text-decoration: none; }
+
+.cta p {
+  display: inline; }
+
+.cta img {
+  height: 14px;
+  width: 14px;
+  margin-right: 0.2rem; }
+
+.contact-number {
+  margin-bottom: 0.3rem; }
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0px); } }
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+  .presentation {
+    /* flex-direction: column; */ }
+  .introduction {
+    margin-top: 5vh;
+    text-align: center; }
+  .intro-text h1 {
+    font-size: 30px; }
+  .intro-text p {
+    font-size: 11px; }
+  a {
+    font-size: 11px; }
+  .cta {
+    padding: 10px 0px 0px 0px; } }
