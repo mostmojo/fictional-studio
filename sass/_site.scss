@@ -36,12 +36,6 @@ a {
 	flex: 1;
 }
 
-.about {
-	flex: 2;
-	margin-right: 2rem;
-	color: #a2a2a2;
-	opacity: 0.4;
-}
 
 .presentation {
 	display: flex;
@@ -49,19 +43,22 @@ a {
 	margin: 10vh auto;
 	min-height: 100vh;
 	align-items: center;
-	position: relative;
 	justify-content: flex-end;
 }
 
 .introduction {
-	flex: 1;
+	flex: 2;
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 8rem;
+	margin-right: 5rem;
 }
 
 .intro-text h1 {
 	font-size: 22px;
 	font-weight: 300;;
 	/* Add linear gradient to background, then clip the text and make the fill transparent to get a nice bg gradient inside the font ( lines 68-70 are pure gold) */
-	background: linear-gradient(to right, #ffffff,#1B1919);
+	background: linear-gradient(to right, #ffffff,rgb(213, 213, 213));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: drop 2.125s ease;
@@ -114,6 +111,10 @@ a {
 	.introduction {
 		margin-top: 5vh;
 		text-align: center;
+		display: block;
+		justify-content: none;
+		margin-top: 0rem;
+		margin-right: 0rem;
 	}
 
 	.intro-text h1 {
