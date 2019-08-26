@@ -66,12 +66,12 @@ ORDER: Base + typography + general layout + grid > page layout > components
 		border-radius: 50%;
 		box-shadow: 0 1rem 3rem rgba(#000, 0.1);
 		cursor: pointer;
-		height: 7rem;
+		height: 3rem;
 		position: fixed;
 		right: 6rem;
 		text-align: center;
 		top: 6rem;
-		width: 7rem;
+		width: 3rem;
 		z-index: 2000;
 
 		@include respond(tab-port) {
@@ -89,12 +89,12 @@ ORDER: Base + typography + general layout + grid > page layout > components
 	.navigation__background {
 		background-image: radial-gradient(#333, #000);
 		border-radius: 50%;
-		height: 6rem;
+		height: 3rem;
 		position: fixed;
 		right: 6.5rem;
 		top: 6.5rem;
 		transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-		width: 6rem;
+		width: 3rem;
 		z-index: 1000;
 
 		@include respond(tab-port) {
@@ -173,12 +173,12 @@ ORDER: Base + typography + general layout + grid > page layout > components
 
 	.navigation__icon {
 		position: relative;
-		margin-top: 3.5rem;
+		margin-top: 1.5rem;
 
 		&, // the three lines -> center, above, and below
 		&::before,
 		&::after {
-			width: 3rem;
+			width: 1.3rem;
 			height: 1.3px;
 			background-color: darkgrey;
 			display: inline-block;
@@ -193,19 +193,19 @@ ORDER: Base + typography + general layout + grid > page layout > components
 		}
 
 		&::before {
-			top: -0.8rem;
+			top: -0.4rem;
 		}
 		&::after {
-			top: 0.8rem;
+			top: 0.4rem;
 		}
 	}
 
 	.navigation__button:hover .navigation__icon::before {
-		top: -1rem;
+		top: -0.5rem;
 	}
 
 	.navigation__button:hover .navigation__icon::after {
-		top: 1rem;
+		top: 0.5rem;
 	}
 
 	// Make the middle line, of the three lines invisible
