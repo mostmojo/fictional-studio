@@ -153,7 +153,7 @@ ORDER: Base + typography + general layout + grid > page layout > components
 body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
-  background: #1B1919; }
+  background: #D3D3D3; }
 
 header {
   display: flex;
@@ -186,15 +186,15 @@ a {
 .introduction {
   flex: 2;
   display: flex;
-  justify-content: flex-end;
-  margin-top: 8rem;
-  margin-right: 5rem; }
+  justify-content: center;
+  margin-top: -14rem;
+  margin-right: -1rem; }
 
 .intro-text h1 {
   font-size: 22px;
   font-weight: 600;
   /* Add linear gradient to background, then clip the text and make the fill transparent to get a nice bg gradient inside the font ( lines 68-70 are pure gold) */
-  background: linear-gradient(to right, #ffffff, #d5d5d5);
+  background: linear-gradient(to right, #fff, #fff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: drop 2.125s ease; }
