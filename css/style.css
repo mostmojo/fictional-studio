@@ -191,7 +191,7 @@ a {
   margin-right: -1rem; }
 
 .intro-text h1 {
-  font-size: 22px;
+  font-size: 26px;
   font-weight: 600;
   /* Add linear gradient to background, then clip the text and make the fill transparent to get a nice bg gradient inside the font ( lines 68-70 are pure gold) */
   background: linear-gradient(to right, #fff, #fff);
@@ -206,7 +206,8 @@ a {
 
 .cta {
   text-decoration: none;
-  font-size: 12px; }
+  font-size: 13px;
+  margin-left: 1.6rem; }
 
 .cta p {
   display: inline; }
@@ -215,6 +216,11 @@ a {
   height: 14px;
   width: 14px;
   margin-right: 0.2rem; }
+
+.construction {
+  font-size: 13px !important;
+  font-weight: bold;
+  margin-top: 2rem !important; }
 
 .contact-number {
   margin-bottom: 0.3rem;
@@ -246,7 +252,8 @@ a {
   a {
     font-size: 10px; }
   .cta {
-    padding: 10px 0px 0px 0px; } }
+    padding: 10px 0px 0px 0px;
+    margin-right: 1.6rem; } }
 
 .feature__icon {
   fill: white;
