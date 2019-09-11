@@ -64,9 +64,9 @@
   margin-left: 3rem; }
   .heading-primary--main {
     display: block;
-    font-size: 11rem;
+    font-size: 15rem;
     font-weight: 600;
-    letter-spacing: 3.4rem;
+    letter-spacing: 0.5rem;
     opacity: 0;
     animation-name: moveInLeft;
     animation-duration: 4.5s;
