@@ -374,3 +374,7 @@ a {
   width: 4.5rem;
   height: 4.5rem;
   transform: translateY(-1rem); }
+
+.social {
+  position: absolute;
+  bottom: 9rem; }
