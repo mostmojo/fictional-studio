@@ -73,6 +73,9 @@
     animation-timing-function: ease-out;
     /* animation-iteration-count: 3; */
     /* animation-delay: 3s; */ }
+    @media screen and (max-width: 1024px) {
+      .heading-primary--main {
+        font-size: 3.7rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
