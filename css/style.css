@@ -336,9 +336,11 @@ a {
   margin-top: 1rem; }
 
 .construction {
-  font-size: 13px !important;
+  font-size: 14px !important;
   font-weight: bold;
-  margin-top: 2rem !important; }
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  text-align: center; }
 
 .contact-number {
   margin-bottom: 0.3rem;
