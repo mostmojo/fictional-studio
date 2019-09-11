@@ -147,7 +147,7 @@ ORDER: Base + typography + general layout + grid > page layout > components
   border-radius: 50%;
   cursor: pointer;
   position: fixed;
-  right: 6rem;
+  right: 2rem;
   text-align: center;
   top: 6rem;
   width: 3rem;
