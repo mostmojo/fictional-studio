@@ -75,13 +75,13 @@ ORDER: Base + typography + general layout + grid > page layout > components
 		z-index: 2000;
 
 		@include respond(tab-port) {
-			right: 4rem;
-			top: 4rem;
+			right: 1rem;
+			top: 1rem;
 		}
 
 		@include respond(phone) {
-			right: 3rem;
-			top: 3rem;
+			right: 1rem;
+			top: 1rem;
 		}
 	}
 

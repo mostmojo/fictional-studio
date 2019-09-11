@@ -37,7 +37,7 @@
   box-sizing: inherit; }
 
 .header {
-  height: 85vh;
+  height: 100vh;
   background-image: url("https://res.cloudinary.com/mostmojo/image/upload/v1568146877/1final.jpg");
   background-size: cover;
   background-position: top; }
@@ -52,7 +52,7 @@
     height: 3.5rem; }
   .header__text-box {
     position: absolute;
-    top: 50%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
@@ -76,6 +76,9 @@
     @media screen and (max-width: 1024px) {
       .heading-primary--main {
         font-size: 3.7rem; } }
+    @media screen and (max-width: 1224px) {
+      .heading-primary--main {
+        font-size: 8.7rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -154,12 +157,12 @@ ORDER: Base + typography + general layout + grid > page layout > components
   z-index: 2000; }
   @media only screen and (max-width: 56.25em) {
     .navigation .navigation__button {
-      right: 4rem;
-      top: 4rem; } }
+      right: 1rem;
+      top: 1rem; } }
   @media only screen and (max-width: 37.5em) {
     .navigation .navigation__button {
-      right: 3rem;
-      top: 3rem; } }
+      right: 1rem;
+      top: 1rem; } }
 
 .navigation .navigation__background {
   border-radius: 50%;
@@ -378,4 +381,4 @@ a {
 
 .social {
   position: absolute;
-  bottom: 9rem; }
+  bottom: 1rem; }

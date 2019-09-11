@@ -11,7 +11,7 @@ $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 
 .header {
-	height: 85vh;
+	height: 100vh;
 	background-image: url("https://res.cloudinary.com/mostmojo/image/upload/v1568146877/1final.jpg");
 	background-size: cover;
 	background-position: top;
@@ -34,7 +34,7 @@ $gutter-horizontal: 6rem;
 
 	&__text-box {
 	  position: absolute;
-	  top: 50%;
+	  top: 54%;
 	  left: 50%;
 	  transform: translate(-50%, -50%);
 	  text-align: center;
@@ -63,7 +63,10 @@ $gutter-horizontal: 6rem;
 	  /* animation-delay: 3s; */
 	  @media screen and (max-width: 1024px) {
 		font-size: 3.7rem;
-	}
+	  }
+	  @media screen and (max-width: 1224px) {
+		font-size: 8.7rem;
+	  }
 	}
   }
 
