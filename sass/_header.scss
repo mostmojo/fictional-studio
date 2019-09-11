@@ -16,6 +16,12 @@ $gutter-horizontal: 6rem;
 	background-size: cover;
 	background-position: top;
 
+	@media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+	  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+	  only screen and (min-width: 125em) {
+	  background-image: url("https://res.cloudinary.com/mostmojo/image/upload/v1568146877/1final.jpg");
+	}
+
 	&__logo-box {
 	  position: absolute;
 	  top: 4rem;
