@@ -1,16 +1,16 @@
 @keyframes moveInLeft {
 	0% {
-	  opacity: 0;
-	  transform: translateX(-10rem);
+	  opacity: 0.1;
+	  transform: translateX(0rem);
 	}
 
 	70% {
 	  opacity: 0.75;
-	  transform: translateX(1rem);
+	  transform: translateX(0rem);
 	}
 
 	85% {
-		opacity: 0.6;
+		opacity: 0.8;
 	}
 
 	100% {

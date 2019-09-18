@@ -1,12 +1,12 @@
 @keyframes moveInLeft {
   0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
+    opacity: 0.1;
+    transform: translateX(0rem); }
   70% {
     opacity: 0.75;
-    transform: translateX(1rem); }
+    transform: translateX(0rem); }
   85% {
-    opacity: 0.6; }
+    opacity: 0.8; }
   100% {
     opacity: 0;
     transform: translate(0); } }
@@ -40,7 +40,7 @@
   height: 100vh;
   background-image: url("https://res.cloudinary.com/mostmojo/image/upload/v1568146877/1final.jpg");
   background-size: cover;
-  background-position: top; }
+  background-position: left; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background-image: url("https://res.cloudinary.com/mostmojo/image/upload/v1568146877/1final.jpg"); } }
@@ -52,16 +52,16 @@
     height: 3.5rem; }
   .header__text-box {
     position: absolute;
-    top: 54%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
 
 .heading-primary {
-  color: #fff;
+  color: #ffdad0;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-left: 3rem; }
+  margin-left: 2rem; }
   .heading-primary--main {
     display: block;
     font-size: 15rem;
