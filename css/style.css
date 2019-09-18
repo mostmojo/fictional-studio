@@ -280,7 +280,10 @@ header {
   justify-content: flex-end; }
 
 a {
-  color: #747373; }
+  color: #000;
+  font-size: 16px !important;
+  text-decoration: none;
+  margin-bottom: -0.8rem; }
 
 .heading-elements {
   display: flex;
@@ -317,13 +320,11 @@ a {
 
 .intro-text p {
   margin-top: 4px;
-  font-size: 12px;
-  color: #747373; }
+  font-size: 12px; }
 
 .cta {
   text-decoration: none;
-  font-size: 13px;
-  margin-left: 1.6rem; }
+  font-size: 0.8rem; }
 
 .cta p {
   display: inline; }
