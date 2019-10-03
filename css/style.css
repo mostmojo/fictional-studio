@@ -75,10 +75,11 @@
     /* animation-delay: 3s; */ }
     @media screen and (max-width: 1024px) {
       .heading-primary--main {
-        font-size: 3.7rem; } }
+        font-size: 5.7rem; } }
     @media screen and (max-width: 1224px) {
       .heading-primary--main {
-        font-size: 8.7rem; } }
+        font-size: 3.7rem;
+        margin-left: 0; } }
 
 .heading-secondary {
   font-size: 3.5rem;
