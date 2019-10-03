@@ -26,6 +26,7 @@ a {
 	font-size: 16px !important;
 	text-decoration: none;
 	margin-bottom: -0.8rem;
+	cursor: pointer;
 }
 
 .heading-elements {
@@ -75,21 +76,17 @@ a {
 	// color: #747373;
 }
 
-.cta {
-	text-decoration: none;
-	font-size: 0.8rem;
+a {
 	cursor: pointer;
-	// margin-left: 1.6rem;
 }
 
-.cta p {
-	display: inline;
+.cta {
+	text-decoration: none;
 }
 
 .cta img {
-	height: 24px;
-	width: 24px;
-	margin-top: 1rem;
+	height: 28px;
+	margin-top: 1.3rem;
 }
 
 .construction {
@@ -147,6 +144,7 @@ a {
 	.cta {
 		padding: 10px 0px 0px 0px;
 		margin-right: 1.6rem;
+		cursor: pointer;
 	}
 }
 
@@ -171,10 +169,6 @@ a {
     bottom: 0.64rem;
     left: 0.7rem;
     height: 8px;
-}
-
-li {
-	list-style: none;
 }
 
 .studio-logo {
