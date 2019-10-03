@@ -168,19 +168,32 @@ a {
 	position: absolute;
 	bottom: 8rem;
 	left: 2rem;
+	@media screen and (max-width: 1024px) {
+		bottom: 2rem;
+		left: 14rem;
+	}
 }
 
 .social-2 {
 	position: absolute;
 	bottom: 4rem;
 	left: 2rem;
+	@media screen and (max-width: 1024px) {
+		bottom: 2rem;
+		left: 24rem;
+	}
 }
 
 .logo {
 	position: absolute;
     bottom: 0.64rem;
     left: 0.7rem;
-    height: 8px;
+	height: 8px;
+	@media screen and (max-width: 1024px) {
+		bottom: 2.5rem;
+		left: 2rem;
+		height: 14px;
+	}
 }
 
 .studio-logo {
