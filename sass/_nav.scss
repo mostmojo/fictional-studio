@@ -129,6 +129,9 @@ ORDER: Base + typography + general layout + grid > page layout > components
 		top: 50%;
 		transform: translate(-50%, -50%);
 		width: 50%;
+		@media screen and (max-width: 1024px) {
+			width: 77%;
+		}
 	}
 
 	.navigation__item {
@@ -180,7 +183,7 @@ ORDER: Base + typography + general layout + grid > page layout > components
 		&::before,
 		&::after {
 			width: 1.3rem;
-			height: 2.3px;
+			height: 2.1px;
 			background-color: #000;
 			display: inline-block;
 		}
@@ -201,13 +204,13 @@ ORDER: Base + typography + general layout + grid > page layout > components
 		}
 	}
 
-	.navigation__button:hover .navigation__icon::before {
-		top: -0.5rem;
-	}
+	// .navigation__button:hover .navigation__icon::before {
+	// 	top: -0.5rem;
+	// }
 
-	.navigation__button:hover .navigation__icon::after {
-		top: 0.5rem;
-	}
+	// .navigation__button:hover .navigation__icon::after {
+	// 	top: 0.5rem;
+	// }
 
 	// Make the middle line, of the three lines invisible
 	.navigation__checkbox:checked + .navigation__button .navigation__icon {

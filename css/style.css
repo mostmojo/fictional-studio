@@ -201,6 +201,9 @@ ORDER: Base + typography + general layout + grid > page layout > components
   top: 50%;
   transform: translate(-50%, -50%);
   width: 50%; }
+  @media screen and (max-width: 1024px) {
+    .navigation .navigation__list {
+      width: 77%; } }
 
 .navigation .navigation__item {
   margin: 1rem; }
@@ -231,7 +234,7 @@ ORDER: Base + typography + general layout + grid > page layout > components
   margin-top: 1.5rem; }
   .navigation .navigation__icon, .navigation .navigation__icon::before, .navigation .navigation__icon::after {
     width: 1.3rem;
-    height: 2.3px;
+    height: 2.1px;
     background-color: #000;
     display: inline-block; }
   .navigation .navigation__icon::before, .navigation .navigation__icon::after {
@@ -243,12 +246,6 @@ ORDER: Base + typography + general layout + grid > page layout > components
     top: -0.4rem; }
   .navigation .navigation__icon::after {
     top: 0.4rem; }
-
-.navigation .navigation__button:hover .navigation__icon::before {
-  top: -0.5rem; }
-
-.navigation .navigation__button:hover .navigation__icon::after {
-  top: 0.5rem; }
 
 .navigation .navigation__checkbox:checked + .navigation__button .navigation__icon {
   background-color: transparent; }
@@ -397,3 +394,7 @@ a {
 
 li {
   list-style: none; }
+
+@media screen and (max-width: 1024px) {
+  .studio-logo {
+    width: 236px; } }
