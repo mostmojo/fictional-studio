@@ -155,12 +155,24 @@ a {
 	transform: translateY(-1rem);
 }
 
-.social {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+// .social {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: space-between;
+// 	position: absolute;
+// 	bottom: 2rem;
+// 	left: 2rem;
+// }
+
+.social-1 {
 	position: absolute;
-	bottom: 2rem;
+	bottom: 8rem;
+	left: 2rem;
+}
+
+.social-2 {
+	position: absolute;
+	bottom: 4rem;
 	left: 2rem;
 }
 
