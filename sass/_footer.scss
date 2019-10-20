@@ -1,0 +1,29 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    @media (max-width: 575px) {
+        flex-direction: row-reverse;
+    }
+}
+
+.logo {
+	margin-top: 2rem;
+	height: 8px;
+	@media screen and (max-width: 1024px) {
+		height: 14px;
+    }
+    @media (max-width: 575px) {
+        margin-right: 2rem;
+    }
+}
+
+.studio-logo {
+	@media screen and (max-width: 1024px) {
+		width: 236px;
+	}
+}

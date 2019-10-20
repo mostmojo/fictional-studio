@@ -41,10 +41,8 @@
   background-image: url("https://res.cloudinary.com/mostmojo/image/upload/v1568146877/1final.jpg");
   background-size: cover;
   object-fit: contain;
-  background-position: left; }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
-    .header {
-      background-image: url("https://res.cloudinary.com/mostmojo/image/upload/v1568146877/1final.jpg"); } }
+  background-position: center;
+  overflow: hidden; }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -65,7 +63,7 @@
   margin-left: 2rem; }
   .heading-primary--main {
     display: block;
-    font-size: 15rem;
+    font-size: 15vw;
     font-weight: 600;
     letter-spacing: 0.5rem;
     opacity: 0;
@@ -74,13 +72,13 @@
     animation-timing-function: ease-out;
     /* animation-iteration-count: 3; */
     /* animation-delay: 3s; */ }
-    @media screen and (max-width: 1024px) {
-      .heading-primary--main {
-        font-size: 5.7rem; } }
     @media screen and (max-width: 1224px) {
       .heading-primary--main {
-        font-size: 3.7rem;
+        font-size: 12vw;
         margin-left: 0; } }
+    @media screen and (max-width: 1024px) {
+      .heading-primary--main {
+        font-size: 10vw; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -276,7 +274,7 @@ header {
   width: 100%;
   margin: auto;
   align-items: center;
-  justify-content: flex-end; }
+  justify-content: center; }
 
 a {
   color: #000;
@@ -379,34 +377,27 @@ a {
   height: 4.5rem;
   transform: translateY(-1rem); }
 
-.social-1 {
+.footer {
   position: absolute;
-  bottom: 8rem;
-  left: 2rem; }
-  @media screen and (max-width: 1024px) {
-    .social-1 {
-      bottom: 2rem;
-      left: 14rem; } }
-
-.social-2 {
-  position: absolute;
-  bottom: 4rem;
-  left: 2rem; }
-  @media screen and (max-width: 1024px) {
-    .social-2 {
-      bottom: 2rem;
-      left: 24rem; } }
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px; }
+  @media (max-width: 575px) {
+    .footer {
+      flex-direction: row-reverse; } }
 
 .logo {
-  position: absolute;
-  bottom: 0.64rem;
-  left: 0.7rem;
+  margin-top: 2rem;
   height: 8px; }
   @media screen and (max-width: 1024px) {
     .logo {
-      bottom: 2.5rem;
-      left: 2rem;
       height: 14px; } }
+  @media (max-width: 575px) {
+    .logo {
+      margin-right: 2rem; } }
 
 @media screen and (max-width: 1024px) {
   .studio-logo {
