@@ -390,11 +390,12 @@ a {
       flex-direction: row-reverse; } }
 
 .logo {
-  margin-top: 2rem;
-  height: 8px; }
+  margin-top: 1rem;
+  height: 58px; }
   @media screen and (max-width: 1024px) {
     .logo {
-      height: 14px; } }
+      height: 58px;
+      margin-top: 2rem; } }
   @media (max-width: 575px) {
     .logo {
       margin-right: 2rem; } }
