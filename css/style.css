@@ -400,6 +400,8 @@ a {
     .logo {
       margin-right: 2rem; } }
 
-@media screen and (max-width: 1024px) {
-  .studio-logo {
-    width: 236px; } }
+.studio-logo {
+  height: 10rem; }
+  @media screen and (max-width: 1024px) {
+    .studio-logo {
+      width: 236px; } }
