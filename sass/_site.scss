@@ -1,158 +1,158 @@
 /* Basic reset */
 
 * {
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight: 300;
-	// background: #1B1919;
-	background: #D7D7D7;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",
+    sans-serif;
+  font-weight: 300;
+  // background: #1B1919;
+  background: #d7d7d7;
 }
 
 header {
-	display: flex;
-	width: 100%;
-	margin: auto;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
-	color: #000;
-	font-size: 16px !important;
-	text-decoration: none;
-	margin-bottom: -0.8rem;
-	cursor: pointer;
+  color: #000;
+  font-size: 16px !important;
+  text-decoration: none;
+  margin-bottom: -0.8rem;
+  cursor: pointer;
 }
 
 .heading-elements {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .hamburger-menu {
-	height: 16px;
-	width: 32px;
-	flex: 1;
+  height: 16px;
+  width: 32px;
+  flex: 1;
 }
 
-
 .presentation {
-	display: flex;
-	width: 90%;
-	margin: 10vh auto;
-	min-height: 100vh;
-	align-items: center;
-	justify-content: flex-end;
+  display: flex;
+  width: 90%;
+  margin: 10vh auto;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .introduction {
-	flex: 2;
-	display: flex;
-	justify-content: center;
-	// margin-top: 8rem;
-	// margin-right: 5rem;
-	margin-top: -14rem;
-    margin-right: -1rem;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  // margin-top: 8rem;
+  // margin-right: 5rem;
+  margin-top: -14rem;
+  margin-right: -1rem;
 }
 
 .intro-text h1 {
-	font-size: 26px;
-	font-weight: 600;;
-	/* Add linear gradient to background, then clip the text and make the fill transparent to get a nice bg gradient inside the font ( lines 68-70 are pure gold) */
-	background: linear-gradient(to right, #fff,#fff);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: drop 2.125s ease;
+  font-size: 26px;
+  font-weight: 600;
+  /* Add linear gradient to background, then clip the text and make the fill transparent to get a nice bg gradient inside the font ( lines 68-70 are pure gold) */
+  background: linear-gradient(to right, #fff, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: drop 2.125s ease;
 }
 
 .intro-text p {
-	margin-top: 4px;
-	font-size: 12px;
-	// color: #747373;
+  margin-top: 4px;
+  font-size: 12px;
+  // color: #747373;
 }
 
 a {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .cta {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .cta img {
-	height: 28px;
-	margin-top: 1.3rem;
+  height: 28px;
+  margin-top: 1.3rem;
 }
 
 .construction {
-	font-size: 14px !important;
-    font-weight: bold;
-	margin-top: 2rem !important;
-	margin-bottom: 2rem !important;
-	text-align: center;
+  font-size: 14px !important;
+  font-weight: bold;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+  text-align: center;
 }
 
 .contact-number {
-	margin-bottom: 0.3rem;
-	font-size: 12px;
+  margin-bottom: 0.3rem;
+  font-size: 12px;
 }
 
 @keyframes drop {
-	0% {
-		opacity: 0;
-		transform: translateY(-80px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 /* Media queries */
 
 @media screen and (max-width: 1024px) {
-	.presentation {
-		/* flex-direction: column; */
-	}
+  .presentation {
+    /* flex-direction: column; */
+  }
 
-	.introduction {
-		margin-top: 5vh;
-		text-align: center;
-		display: block;
-		justify-content: none;
-		margin-top: 0rem;
-		margin-right: 0rem;
-	}
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+    display: block;
+    justify-content: none;
+    margin-top: 0rem;
+    margin-right: 0rem;
+  }
 
-	.intro-text h1 {
-		font-size: 20px;
-	}
+  .intro-text h1 {
+    font-size: 20px;
+  }
 
-	.intro-text p {
-		font-size: 10px;
-	}
+  .intro-text p {
+    font-size: 10px;
+  }
 
-	a {
-		font-size: 10px;
-	}
+  a {
+    font-size: 10px;
+  }
 
-	.cta {
-		padding: 10px 0px 0px 0px;
-		margin-right: 1.6rem;
-		cursor: pointer;
-	}
+  .cta {
+    padding: 10px 0px 0px 0px;
+    margin-right: 1.6rem;
+    cursor: pointer;
+  }
 }
 
 .feature__icon {
-	fill: white;
-	width: 4.5rem;
-	height: 4.5rem;
-	transform: translateY(-1rem);
+  fill: white;
+  width: 4.5rem;
+  height: 4.5rem;
+  transform: translateY(-1rem);
 }
 
 // .social {
