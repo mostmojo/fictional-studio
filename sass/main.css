@@ -612,6 +612,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 10px;
+  z-index: 1100;
 }
 
 @media (max-width: 575px) {
