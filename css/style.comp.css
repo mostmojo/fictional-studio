@@ -38,12 +38,12 @@
 
 .header {
   height: 100vh;
-  background-image: url("https://res.cloudinary.com/mostmojo/image/upload/v1568146877/1final.jpg");
+  background-image: url("https://res.cloudinary.com/mostmojo/image/upload/q_auto,f_auto/1final.jpg");
   background-size: cover;
   background-position: left; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: url("https://res.cloudinary.com/mostmojo/image/upload/v1568146877/1final.jpg"); } }
+      background-image: url("https://res.cloudinary.com/mostmojo/image/upload/q_auto,f_auto/1final.jpg"); } }
   .header__logo-box {
     position: absolute;
     top: 4rem;

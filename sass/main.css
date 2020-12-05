@@ -111,7 +111,7 @@
 
 .header {
   height: 100vh;
-  background-image: url("https://res.cloudinary.com/mostmojo/image/upload/v1568146877/1final.jpg");
+  background-image: url("https://res.cloudinary.com/mostmojo/image/upload/q_auto,f_auto/1final.jpg");
   background-size: cover;
   -o-object-fit: contain;
      object-fit: contain;
